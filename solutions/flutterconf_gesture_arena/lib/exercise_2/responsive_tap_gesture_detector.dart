@@ -75,7 +75,6 @@ class _ResponsiveTapGestureRecognizer extends TapGestureRecognizer {
         () {
           try {
             resolve(GestureDisposition.accepted);
-            acceptGesture(event.pointer);
           } catch (_) {
             // Necessary to avoid null check operator exception
             // By forcing the gesture to be accepted in this point
